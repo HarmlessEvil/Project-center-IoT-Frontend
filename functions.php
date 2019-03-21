@@ -52,8 +52,6 @@ if ( ! function_exists( 'project_center_iot_setup' ) ) {
 add_action( 'after_setup_theme', 'project_center_iot_setup' );
 
 function project_center_iot_scripts() {
-    wp_enqueue_style('main', get_stylesheet_uri());
-
     wp_enqueue_style( 'bootstrap', 'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' );
     wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.3.1.slim.min.js' );
     wp_enqueue_script( 'popper', 'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' );
@@ -61,6 +59,8 @@ function project_center_iot_scripts() {
         'jquery',
         'popper'
     ] );
+
+    wp_enqueue_style('main', get_stylesheet_uri());
 }
 
 add_action( 'wp_enqueue_scripts', 'project_center_iot_scripts' );
