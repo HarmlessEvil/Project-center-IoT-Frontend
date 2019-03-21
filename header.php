@@ -42,12 +42,14 @@
         </div>
     </header>
 
-<?php if ( is_home() ) : ?>
-    <div class="container-fluid header">
-        <div class="row">
-            <div class="col darken-ovr">
-                <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+<div id="about">
+    <?php if ( is_home() ) : ?>
+        <div class="container-fluid header">
+            <div class="row">
+                <div class="col darken-ovr">
+                    <h1 class="site-title"><?php bloginfo( 'name' ); ?></h1>
+                </div>
             </div>
         </div>
-    </div>
-<?php endif;
+    <?php endif; ?>
+</div>
