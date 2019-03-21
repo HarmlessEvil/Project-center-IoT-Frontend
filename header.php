@@ -42,7 +42,7 @@
         </div>
     </header>
 
-<?php if ( is_front_page() && is_home() ) : ?>
+<?php if ( is_home() ) : ?>
     <div class="container-fluid header">
         <div class="row">
             <div class="col darken-ovr">
